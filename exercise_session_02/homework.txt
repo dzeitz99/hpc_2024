@@ -1,0 +1,15 @@
+This is the file for my homework for the second homework sheet:
+exercise 1: the status of my repository is the following:
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+n my log there is the initial import and my first commit.
+There has been an issue with the login to push my repository to my github, whihc I have solved by generating a personal token that I use as a login.
+
+exercise2:
+
+
+
+
