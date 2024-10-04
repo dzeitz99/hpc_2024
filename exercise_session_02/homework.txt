@@ -9,7 +9,10 @@ n my log there is the initial import and my first commit.
 There has been an issue with the login to push my repository to my github, whihc I have solved by generating a personal token that I use as a login.
 
 exercise2:
+cc is the c compiler. O3 will optimize the compilation a lot (more than O1 and O2) whereas O0 will not optimize at all.
+module list shows the loaded modules, module avail shows the available modules, which can be loaded with module load, module spider shows all the modules that can be loaded onto the system.
+The environment that I am currently using is bash.
+I was not able to compile the cp_omp because omp.h is missing and I don't know how to fix that. I was able to compile and run the mpi version
 
-
-
-
+exercise 3:
+with sinfo -p debug i see different nodes in differemt states available for debug i.e. for smaller tasks. I can print my or any other users jobs with squeue -u username.
