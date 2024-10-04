@@ -16,3 +16,5 @@ I was not able to compile the cp_omp because omp.h is missing and I don't know h
 
 exercise 3:
 with sinfo -p debug i see different nodes in differemt states available for debug i.e. for smaller tasks. I can print my or any other users jobs with squeue -u username.
+To add the output and error, i need to add a flag with -error=errors.log and --output=output.log
+The output of my script runs the cpi codes n times where n is the number of nodes used. I did not manage to compile the omp version of the script.
