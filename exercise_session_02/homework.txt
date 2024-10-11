@@ -15,4 +15,5 @@ The environment that I am currently using is bash.
 I was not able to compile the cp_omp because omp.h is missing and I don't know how to fix that. I was able to compile and run the mpi version
 
 exercise 3:
-with sinfo -p debug i see different nodes in differemt states available for debug i.e. for smaller tasks. I can print my or any other users jobs with squeue -u username.
+with sinfo -p debug i see different nodes in differemt states available for debug i.e. for smaller tasks. I can print my or any other users jobs with squeue -u username
+the output of my script is the program run the same times the number of cores used.
