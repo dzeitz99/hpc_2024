@@ -13,6 +13,7 @@ Exercise 2:
 4) -E "(.1*){3,}"
 5) -E "(.111*)"
 
+The file out.txt contains the temperatures from the txt files and the script1.sh generated this out.txt file.
 
 
 Exercise 3:
