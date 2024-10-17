@@ -16,4 +16,20 @@ Exercise 2:
 The file out.txt contains the temperatures from the txt files and the script1.sh generated this out.txt file.
 
 
+
 Exercise 3:
+The factor shows the prime factorization of a number. 31 is a prime so its factor 31 is 31. factor 20 is 2*2*5 so 2 2 5.
+
+a prime has only one factor , 1 and itself. a composite has more factors.
+
+the flag wc -l which counts the number of <newline> characters in the input file
+
+the output of the script isitprime.sh with the following values following in the command line:
+4230283 is a prime number. (Time taken: 8 ms)
+4572862171001 is a prime number. (Time taken: 8 ms)
+
+./isitprime.sh 7 15 32
+7 is a prime number. (Time taken: 8 ms)
+15 is not a prime number. (Time taken: 7 ms)
+32 is not a prime number. (Time taken: 8 ms)
+
