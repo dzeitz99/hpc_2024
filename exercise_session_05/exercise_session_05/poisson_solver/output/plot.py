@@ -6,7 +6,7 @@ from matplotlib.colors import  LogNorm
 from numpy import genfromtxt
 
 # path the the file
-path_to_output = "output_0013000.csv"
+path_to_output = "output_0028000.csv"
 path_to_source = "output_source.csv"
 
 
@@ -36,4 +36,4 @@ fig.colorbar(im1, ax=ax[0])
 fig.colorbar(im2, ax=ax[1])
 
 plt.tight_layout()
-plt.savefig("test.png")
+plt.savefig("rhs_2_solution.png")
