@@ -1,9 +1,9 @@
-#include "mpi.h"
+#include <mpi.h>
 #include <stdio.h>
 
 int main(int argc, char** argv) {
     // Initialize the MPI environment
-    MPI_Init(NULL, NULL);
+    MPI_Init(&argc, &argv);
 
     // Get the number of processes and rank of the process
     int size, my_rank;
@@ -18,11 +18,25 @@ int main(int argc, char** argv) {
     // Compute the ranks of left/right neighbours 
     int left_rank, right_rank;
 
+    left_rank = (my_rank -1 + size) % size;
+    right_rank = (my_rank + 1) % size;
+
     // Loop over the number of processes
+    for (int i = 0; i < size -1; i++){
+        send_rank = my_rank;
+        MPI_Sendrecv(&send_rank, 1, MPI_INT, right_rank, 0,
+                     &recv_rank, 1, MPI_INT, left_rank, 0,
+                     MPI_COMM_WORLD,MPI_STATUS_IGNORE);
+    
+        my_sum += recv_rank;
+
+        my_rank = recv_rank;
+    }
     //     send to right, receive from left
     //     update the send buffer
     //     update the local sum
 
+//test
     printf("I am processor %d out of %d, and the sum is %d\n", my_rank, size, my_sum);
 
     // Finalize the MPI environment.
