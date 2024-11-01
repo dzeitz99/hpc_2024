@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
     const long long N = 1000000000; // Total number of terms
     long long terms_per_proc = N / size; // Terms handled by each process
 
-    // Calculate the partial sum for this process's assigned terms
+    // Calculate  partial sum for this process
     double partial_sum = 0.0;
     long long start = rank * terms_per_proc;
     long long end = (rank == size - 1) ? N : start + terms_per_proc;
@@ -21,11 +21,10 @@ int main(int argc, char* argv[]) {
         partial_sum += term;
     }
 
-    // Gather partial sums to the master process
     double global_sum = 0.0;
     MPI_Reduce(&partial_sum, &global_sum, 1, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
 
-    // The master process computes the final approximation of pi
+    // Master process computes final approximation of pi
     if (rank == 0) {
         double pi_approx = global_sum * 4.0;
         printf("Approximation of Pi: %.15f\n", pi_approx);
