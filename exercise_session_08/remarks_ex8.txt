@@ -1,0 +1,3 @@
+1) in the openacc code the time that it takes becomes less, my guess is that this is due to the exchange of memory being optimized with every run.
+2) in the cude code the times are significantly less than in the openacc code, the cuda coda is more optimized and I believe that the fluctuations are due to the random changes in the memory access and exchange patterns.
+3) Overall, setting the number of blocks and threads seems to slow down the code compared to the previvous exercise. The scaling with the blocks and threads seems random and mostly evenly spread between 1 and 2 seconds except for some combinations (600 blocks, 96 threads) where it takes significantly longer. I am not sure if that is the result that I should obtain.
