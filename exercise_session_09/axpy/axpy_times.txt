@@ -1,0 +1,13 @@
+für N=2
+axpy (openacc): 0.000227928 s
+
+für N=4
+axpy (openacc): 0.000227928 s
+
+für N=8
+axpy (openacc): 0.000227928 s
+
+für N=32
+axpy (openacc): 0.000231028 s
+
+Times are constant for low N and increase slightly for large N.
