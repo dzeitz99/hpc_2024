@@ -1,0 +1,8 @@
+dot product OpenACC of length n = 4 : 3.05176e-05MB
+expected 42 got 42: success
+Host kernel took 0 s
+GPU kernel took 0.019336 s
+
+The function uses sum where multiple threads try to access the same variable sum, which makes it prone for race conditions.
+This is usually prevented by adding the keyword reduction.
+The GPU code is faster than the CPU code.
