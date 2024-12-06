@@ -1,0 +1,512 @@
+
+#################################################################
+#                                                               #
+#            CrayPat-lite Performance Statistics                #
+#                                                               #
+#################################################################
+
+CrayPat/X:  Version 23.12.0 Revision 67ffc52e7 sles15.4_x86_64  11/13/23 21:04:20
+Experiment:                  lite  lite-samples
+Number of PEs (MPI ranks):      1
+Numbers of PEs per Node:        1
+Numbers of Threads per PE:      1
+Number of Cores per Socket:    64
+Execution start time:  Fri Dec  6 12:38:34 2024
+System name and speed:  nid001009  2.256 GHz (nominal)
+AMD   Rome                 CPU  Family: 23  Model: 49  Stepping:  0
+Core Performance Boost:  1 PE has CPB capability
+
+
+Avg Process Time: 12.67 secs         
+High Memory:       40.5 MiBytes 40.5 MiBytes per PE
+
+Notes for table 1:
+
+  This table shows functions that have significant exclusive sample
+    hits, averaged across ranks.
+  For further explanation, use:  pat_report -v -O samp_profile ...
+
+Table 1:  Sample Profile by Function
+
+  Samp% |    Samp | Group
+        |         |  Function=[MAX10]
+       
+ 100.0% | 1,261.0 | Total
+|------------------------------------
+| 100.0% | 1,261.0 | USER
+||-----------------------------------
+|| 100.0% | 1,261.0 | main
+|====================================
+
+Notes for table 2:
+
+  This table shows functions, and line numbers within functions, that
+    have significant exclusive sample hits, averaged across ranks.
+  For further explanation, use:  pat_report -v -O samp_profile+src ...
+
+Table 2:  Sample Profile by Group, Function, and Line
+
+  Samp% |    Samp | Group
+        |         |  Function=[MAX10]
+        |         |   Source
+        |         |    Line
+       
+ 100.0% | 1,261.0 | Total
+|---------------------------------------------------------------
+| 100.0% | 1,261.0 | USER
+||--------------------------------------------------------------
+|| 100.0% | 1,261.0 | main
+|||-------------------------------------------------------------
+3||  82.6% | 1,042.0 | hpc_2024/exercise_session_11/nbody/nbody.cpp
+||||------------------------------------------------------------
+4|||   2.8% |    35.0 | line.38
+4|||  24.1% |   304.0 | line.39
+4|||  55.6% |   701.0 | line.40
+||||============================================================
+3||  17.4% |   219.0 | c++/12/bits/stl_vector.h
+4||        |         |  line.386
+|===============================================================
+
+Observation:  MPI utilization
+
+    No suggestions were made because each node has only one rank.
+
+
+Notes for table 3:
+
+  This table shows memory traffic for numa nodes, taking for each numa
+    node the maximum value across nodes. It also shows the balance in
+    memory traffic by showing the top 3 and bottom 3 node values.
+  For further explanation, use:  pat_report -v -O mem_bw ...
+
+Table 3:  Memory Bandwidth by Numanode
+
+  Memory |    Read |   Write |    Thread |  Memory |  Memory | Numanode
+ Traffic |  Memory |  Memory |      Time | Traffic | Traffic | 
+  GBytes | Traffic | Traffic |           |  GBytes |       / | 
+         |  GBytes |  GBytes |           |   / Sec | Nominal | 
+         |         |         |           |         |    Peak | 
+|------------------------------------------------------------------------
+|    0.05 |    0.05 |    0.00 | 12.651048 |    0.00 |    0.0% | numanode.0
+|========================================================================
+
+Notes for table 4:
+
+  This table shows energy and power usage for the nodes with the
+    maximum, mean, and minimum usage, as well as the sum of usage over
+    all nodes.
+    Energy and power for accelerators is also shown, if available.
+  For further explanation, use:  pat_report -v -O program_energy ...
+
+Table 4:  Program Energy and Power Usage from Cray PM
+
+Total
+
+  
+===========================================================
+  Total
+-----------------------------------------------------------
+  PM Energy Node    211 W     2,669 J
+  PM Energy Cpu      51 W       641 J
+  PM Energy Memory  120 W     1,515 J
+  Process Time            12.673473 secs
+===========================================================
+
+Program invocation:  nbody
+
+For a complete report with expanded tables and notes, run:
+  pat_report /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+93169-2045321078s
+
+For help identifying callers of particular functions:
+  pat_report -O callers+src /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+93169-2045321078s
+To see the entire call tree:
+  pat_report -O calltree+src /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+93169-2045321078s
+
+For interactive, graphical performance analysis, run:
+  app2 /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+93169-2045321078s
+
+================  End of CrayPat-lite output  ==========================
+
+#################################################################
+#                                                               #
+#            CrayPat-lite Performance Statistics                #
+#                                                               #
+#################################################################
+
+CrayPat/X:  Version 23.12.0 Revision 67ffc52e7 sles15.4_x86_64  11/13/23 21:04:20
+Experiment:                  lite  lite-samples
+Number of PEs (MPI ranks):      1
+Numbers of PEs per Node:        1
+Numbers of Threads per PE:      1
+Number of Cores per Socket:    64
+Execution start time:  Fri Dec  6 12:38:34 2024
+System name and speed:  nid001011  2.250 GHz (nominal)
+AMD   Rome                 CPU  Family: 23  Model: 49  Stepping:  0
+Core Performance Boost:  1 PE has CPB capability
+
+
+Avg Process Time: 12.66 secs         
+High Memory:       40.6 MiBytes 40.6 MiBytes per PE
+
+Notes for table 1:
+
+  This table shows functions that have significant exclusive sample
+    hits, averaged across ranks.
+  For further explanation, use:  pat_report -v -O samp_profile ...
+
+Table 1:  Sample Profile by Function
+
+  Samp% |    Samp | Group
+        |         |  Function=[MAX10]
+       
+ 100.0% | 1,260.0 | Total
+|------------------------------------
+| 100.0% | 1,260.0 | USER
+||-----------------------------------
+|| 100.0% | 1,260.0 | main
+|====================================
+
+Notes for table 2:
+
+  This table shows functions, and line numbers within functions, that
+    have significant exclusive sample hits, averaged across ranks.
+  For further explanation, use:  pat_report -v -O samp_profile+src ...
+
+Table 2:  Sample Profile by Group, Function, and Line
+
+  Samp% |    Samp | Group
+        |         |  Function=[MAX10]
+        |         |   Source
+        |         |    Line
+       
+ 100.0% | 1,260.0 | Total
+|---------------------------------------------------------------
+| 100.0% | 1,260.0 | USER
+||--------------------------------------------------------------
+|| 100.0% | 1,260.0 | main
+|||-------------------------------------------------------------
+3||  82.2% | 1,036.0 | hpc_2024/exercise_session_11/nbody/nbody.cpp
+||||------------------------------------------------------------
+4|||   2.9% |    36.0 | line.38
+4|||  23.8% |   300.0 | line.39
+4|||  55.4% |   698.0 | line.40
+||||============================================================
+3||  17.8% |   224.0 | c++/12/bits/stl_vector.h
+4||        |         |  line.386
+|===============================================================
+
+Observation:  MPI utilization
+
+    No suggestions were made because each node has only one rank.
+
+
+Notes for table 3:
+
+  This table shows memory traffic for numa nodes, taking for each numa
+    node the maximum value across nodes. It also shows the balance in
+    memory traffic by showing the top 3 and bottom 3 node values.
+  For further explanation, use:  pat_report -v -O mem_bw ...
+
+Table 3:  Memory Bandwidth by Numanode
+
+  Memory |    Read |   Write |    Thread |  Memory |  Memory | Numanode
+ Traffic |  Memory |  Memory |      Time | Traffic | Traffic | 
+  GBytes | Traffic | Traffic |           |  GBytes |       / | 
+         |  GBytes |  GBytes |           |   / Sec | Nominal | 
+         |         |         |           |         |    Peak | 
+|------------------------------------------------------------------------
+|    0.20 |    0.20 |    0.00 | 12.633807 |    0.02 |    0.0% | numanode.0
+|========================================================================
+
+Notes for table 4:
+
+  This table shows energy and power usage for the nodes with the
+    maximum, mean, and minimum usage, as well as the sum of usage over
+    all nodes.
+    Energy and power for accelerators is also shown, if available.
+  For further explanation, use:  pat_report -v -O program_energy ...
+
+Table 4:  Program Energy and Power Usage from Cray PM
+
+Total
+
+  
+===========================================================
+  Total
+-----------------------------------------------------------
+  PM Energy Node    201 W     2,548 J
+  PM Energy Cpu      50 W       635 J
+  PM Energy Memory  120 W     1,523 J
+  Process Time            12.656620 secs
+===========================================================
+
+Program invocation:  nbody
+
+For a complete report with expanded tables and notes, run:
+  pat_report /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+241185-2045055795s
+
+For help identifying callers of particular functions:
+  pat_report -O callers+src /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+241185-2045055795s
+To see the entire call tree:
+  pat_report -O calltree+src /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+241185-2045055795s
+
+For interactive, graphical performance analysis, run:
+  app2 /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+241185-2045055795s
+
+================  End of CrayPat-lite output  ==========================
+
+#################################################################
+#                                                               #
+#            CrayPat-lite Performance Statistics                #
+#                                                               #
+#################################################################
+
+CrayPat/X:  Version 23.12.0 Revision 67ffc52e7 sles15.4_x86_64  11/13/23 21:04:20
+Experiment:                  lite  lite-samples
+Number of PEs (MPI ranks):      1
+Numbers of PEs per Node:        1
+Numbers of Threads per PE:      1
+Number of Cores per Socket:    64
+Execution start time:  Fri Dec  6 12:38:34 2024
+System name and speed:  nid001012  2.252 GHz (nominal)
+AMD   Rome                 CPU  Family: 23  Model: 49  Stepping:  0
+Core Performance Boost:  1 PE has CPB capability
+
+
+Avg Process Time: 12.66 secs         
+High Memory:       40.6 MiBytes 40.6 MiBytes per PE
+
+Notes for table 1:
+
+  This table shows functions that have significant exclusive sample
+    hits, averaged across ranks.
+  For further explanation, use:  pat_report -v -O samp_profile ...
+
+Table 1:  Sample Profile by Function
+
+  Samp% |    Samp | Group
+        |         |  Function=[MAX10]
+       
+ 100.0% | 1,261.0 | Total
+|------------------------------------
+| 100.0% | 1,261.0 | USER
+||-----------------------------------
+|| 100.0% | 1,261.0 | main
+|====================================
+
+Notes for table 2:
+
+  This table shows functions, and line numbers within functions, that
+    have significant exclusive sample hits, averaged across ranks.
+  For further explanation, use:  pat_report -v -O samp_profile+src ...
+
+Table 2:  Sample Profile by Group, Function, and Line
+
+  Samp% |    Samp | Group
+        |         |  Function=[MAX10]
+        |         |   Source
+        |         |    Line
+       
+ 100.0% | 1,261.0 | Total
+|---------------------------------------------------------------
+| 100.0% | 1,261.0 | USER
+||--------------------------------------------------------------
+|| 100.0% | 1,261.0 | main
+|||-------------------------------------------------------------
+3||  83.4% | 1,052.0 | hpc_2024/exercise_session_11/nbody/nbody.cpp
+||||------------------------------------------------------------
+4|||   2.7% |    34.0 | line.38
+4|||  23.8% |   300.0 | line.39
+4|||  56.9% |   717.0 | line.40
+||||============================================================
+3||  16.6% |   209.0 | c++/12/bits/stl_vector.h
+4||        |         |  line.386
+|===============================================================
+
+Observation:  MPI utilization
+
+    No suggestions were made because each node has only one rank.
+
+
+Notes for table 3:
+
+  This table shows memory traffic for numa nodes, taking for each numa
+    node the maximum value across nodes. It also shows the balance in
+    memory traffic by showing the top 3 and bottom 3 node values.
+  For further explanation, use:  pat_report -v -O mem_bw ...
+
+Table 3:  Memory Bandwidth by Numanode
+
+  Memory |    Read |   Write |    Thread |  Memory |  Memory | Numanode
+ Traffic |  Memory |  Memory |      Time | Traffic | Traffic | 
+  GBytes | Traffic | Traffic |           |  GBytes |       / | 
+         |  GBytes |  GBytes |           |   / Sec | Nominal | 
+         |         |         |           |         |    Peak | 
+|------------------------------------------------------------------------
+|    0.14 |    0.14 |    0.00 | 12.642774 |    0.01 |    0.0% | numanode.0
+|========================================================================
+
+Notes for table 4:
+
+  This table shows energy and power usage for the nodes with the
+    maximum, mean, and minimum usage, as well as the sum of usage over
+    all nodes.
+    Energy and power for accelerators is also shown, if available.
+  For further explanation, use:  pat_report -v -O program_energy ...
+
+Table 4:  Program Energy and Power Usage from Cray PM
+
+Total
+
+  
+===========================================================
+  Total
+-----------------------------------------------------------
+  PM Energy Node    211 W     2,674 J
+  PM Energy Cpu      50 W       636 J
+  PM Energy Memory  120 W     1,524 J
+  Process Time            12.663802 secs
+===========================================================
+
+Program invocation:  nbody
+
+For a complete report with expanded tables and notes, run:
+  pat_report /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+146855-2045056894s
+
+For help identifying callers of particular functions:
+  pat_report -O callers+src /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+146855-2045056894s
+To see the entire call tree:
+  pat_report -O calltree+src /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+146855-2045056894s
+
+For interactive, graphical performance analysis, run:
+  app2 /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+146855-2045056894s
+
+================  End of CrayPat-lite output  ==========================
+
+#################################################################
+#                                                               #
+#            CrayPat-lite Performance Statistics                #
+#                                                               #
+#################################################################
+
+CrayPat/X:  Version 23.12.0 Revision 67ffc52e7 sles15.4_x86_64  11/13/23 21:04:20
+Experiment:                  lite  lite-samples
+Number of PEs (MPI ranks):      1
+Numbers of PEs per Node:        1
+Numbers of Threads per PE:      1
+Number of Cores per Socket:    64
+Execution start time:  Fri Dec  6 12:38:34 2024
+System name and speed:  nid001010  2.254 GHz (nominal)
+AMD   Rome                 CPU  Family: 23  Model: 49  Stepping:  0
+Core Performance Boost:  1 PE has CPB capability
+
+
+Avg Process Time: 12.67 secs         
+High Memory:       40.5 MiBytes 40.5 MiBytes per PE
+
+Notes for table 1:
+
+  This table shows functions that have significant exclusive sample
+    hits, averaged across ranks.
+  For further explanation, use:  pat_report -v -O samp_profile ...
+
+Table 1:  Sample Profile by Function
+
+  Samp% |    Samp | Group
+        |         |  Function=[MAX10]
+       
+ 100.0% | 1,261.0 | Total
+|------------------------------------
+| 100.0% | 1,261.0 | USER
+||-----------------------------------
+|| 100.0% | 1,261.0 | main
+|====================================
+
+Notes for table 2:
+
+  This table shows functions, and line numbers within functions, that
+    have significant exclusive sample hits, averaged across ranks.
+  For further explanation, use:  pat_report -v -O samp_profile+src ...
+
+Table 2:  Sample Profile by Group, Function, and Line
+
+  Samp% |    Samp | Group
+        |         |  Function=[MAX10]
+        |         |   Source
+        |         |    Line
+       
+ 100.0% | 1,261.0 | Total
+|---------------------------------------------------------------
+| 100.0% | 1,261.0 | USER
+||--------------------------------------------------------------
+|| 100.0% | 1,261.0 | main
+|||-------------------------------------------------------------
+3||  83.0% | 1,047.0 | hpc_2024/exercise_session_11/nbody/nbody.cpp
+||||------------------------------------------------------------
+4|||   2.3% |    29.0 | line.38
+4|||  24.1% |   304.0 | line.39
+4|||  56.5% |   712.0 | line.40
+||||============================================================
+3||  17.0% |   214.0 | c++/12/bits/stl_vector.h
+4||        |         |  line.386
+|===============================================================
+
+Observation:  MPI utilization
+
+    No suggestions were made because each node has only one rank.
+
+
+Notes for table 3:
+
+  This table shows memory traffic for numa nodes, taking for each numa
+    node the maximum value across nodes. It also shows the balance in
+    memory traffic by showing the top 3 and bottom 3 node values.
+  For further explanation, use:  pat_report -v -O mem_bw ...
+
+Table 3:  Memory Bandwidth by Numanode
+
+  Memory |    Read |   Write |    Thread |  Memory |  Memory | Numanode
+ Traffic |  Memory |  Memory |      Time | Traffic | Traffic | 
+  GBytes | Traffic | Traffic |           |  GBytes |       / | 
+         |  GBytes |  GBytes |           |   / Sec | Nominal | 
+         |         |         |           |         |    Peak | 
+|------------------------------------------------------------------------
+|    0.22 |    0.22 |    0.00 | 12.651483 |    0.02 |    0.0% | numanode.0
+|========================================================================
+
+Notes for table 4:
+
+  This table shows energy and power usage for the nodes with the
+    maximum, mean, and minimum usage, as well as the sum of usage over
+    all nodes.
+    Energy and power for accelerators is also shown, if available.
+  For further explanation, use:  pat_report -v -O program_energy ...
+
+Table 4:  Program Energy and Power Usage from Cray PM
+
+Total
+
+  
+===========================================================
+  Total
+-----------------------------------------------------------
+  PM Energy Node    216 W     2,737 J
+  PM Energy Cpu      51 W       642 J
+  PM Energy Memory  119 W     1,509 J
+  Process Time            12.674601 secs
+===========================================================
+
+Program invocation:  nbody
+
+For a complete report with expanded tables and notes, run:
+  pat_report /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+99587-2045058944s
+
+For help identifying callers of particular functions:
+  pat_report -O callers+src /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+99587-2045058944s
+To see the entire call tree:
+  pat_report -O calltree+src /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+99587-2045058944s
+
+For interactive, graphical performance analysis, run:
+  app2 /users/dzeitz/hpc_2024/exercise_session_11/nbody/nbody+99587-2045058944s
+
+================  End of CrayPat-lite output  ==========================
