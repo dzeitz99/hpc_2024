@@ -1,0 +1,5 @@
+PI = 3.141592653589971 computed in 4.947 seconds
+PI = 3.141592653589971 computed in 4.844 seconds
+PI = 3.141592653589971 computed in 4.823 seconds
+PI = 3.141592653589971 computed in 4.793 seconds
+PI = 3.141592653589971 computed in 4.79 seconds

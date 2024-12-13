@@ -1,0 +1,34 @@
+exercise 1:
+
+terminal output:
+
+CC -O3 -march=native -ffast-math -g -o nbody nbody.cpp
+WARNING: PerfTools is saving object files from a temporary directory into directory '/users/dzeitz/.craypat/nbody/127599'
+INFO: creating the PerfTools-instrumented executable 'nbody' (lite-samples) ...OK
+
+additionally a number of output folders are created.
+
+
+the main function took the most time, indicating that a bottleneck is somewhere in the main function.
+The output file tells us more precisely which part of the code takes the most time, which is line 40. This is possibly due to the way how the arrays are filled.
+Resizing them to a fixed size and filling them up non-dynamically could reduce the necessary time for these steps.
+
+exercise 2:
+time without sqrtf: 
+
+real    0m13.043s
+user    0m0.015s
+sys     0m0.031s
+
+time with sqrtf:
+
+real    0m7.488s
+user    0m0.030s
+sys     0m0.013s
+
+the necessary time is halfed with the sqrtf function.
+
+
+
+
+
