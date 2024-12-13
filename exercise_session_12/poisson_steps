@@ -1,0 +1,20 @@
+ssh -X -i dzeitz-key-pair.pem ubuntu@172.23.7.80
+sudo apt update -q
+sudo apt install -q cowsay
+cowsay "Moo"
+git clone https://github.com/henrik-knierim/hpc_esc_401
+cp -r hpc_esc_401/exercise_session_12/ exercise_12/
+sudo apt update && sudo apt install build-essential
+sudo apt install make
+cd poisson_solver_serial/
+make
+./main
+sudo apt install python3-pip
+pip3 install numpy
+pip3 install matplotlib
+pip3 install tk
+sudo apt install -q python-tk
+cd output/
+python3 plot.py
+sudo apt install graphicsmagick-imagemagick-compat
+display test.png 
