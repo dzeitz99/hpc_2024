@@ -1,2 +1,4 @@
-I tried to build the file using the Dockerfile which worked a priori, however if I want to compile or run the main file then it does not find anything, as the directory seems to be empty.
-I did not manage to mount the current directory or get it's content into the building process.
+I tried to build the file using the Dockerfile which worked a priori, however if I want to compile or run the main file then,
+it does not find anything, as the directory seems to be empty.
+I did not manage to mount the current directory or get it's content into the building process. While the path looks the same,
+as can be seen in the screenshot docker.jpg, I do not understand why the content is not there.
