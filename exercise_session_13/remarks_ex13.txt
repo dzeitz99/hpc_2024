@@ -1,0 +1,2 @@
+For the map  & reduce operations I was only able to run the python scripts locally as the cloud was down and I was not able to launch the VM instance or hadoop. Thus I unfortunately cannot answer the questions about the Hadoop output files,
+the number of map and reduce operations or the word counts.
